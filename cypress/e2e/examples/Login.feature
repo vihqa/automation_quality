@@ -1,4 +1,4 @@
-Feature: Form Test Automation
+Feature: Login
 
     Scenario: Login with invalid credentials 
         Given I acess the home page
