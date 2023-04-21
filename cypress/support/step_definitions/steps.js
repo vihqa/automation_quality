@@ -14,9 +14,11 @@ Given("I acess the home page", () => {
 When("I visit the login page", () => {
     cy.get('.shop-menu > .nav > :nth-child(4) > a').click()
 })
-When("I type incorrect username and password and click submit", () => {
+When("I type incorrect username and password", () => {
     cy.get('[data-qa="login-email"]').type('8787877@gmail.com')
     cy.get('[data-qa="login-password"]').type('7777')
+})
+And("I click submit", () => {
     cy.get('[data-qa="login-button"]').click()
 })
 Then("An error message should be displayed", () => {
