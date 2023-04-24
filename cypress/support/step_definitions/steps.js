@@ -18,7 +18,7 @@ When("I type incorrect username and password", () => {
     cy.get('[data-qa="login-email"]').type('8787877@gmail.com')
     cy.get('[data-qa="login-password"]').type('7777')
 })
-And("I click submit", () => {
+And("I click on submit", () => {
     cy.get('[data-qa="login-button"]').click()
 })
 Then("An error message should be displayed", () => {
