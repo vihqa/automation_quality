@@ -6,3 +6,7 @@ Feature: Login
         When I type an incorrect username and password 
         And I click on submit
         Then An error message should be displayed
+
+    Scenario: Login with right user and wrong password
+        Given I acess the home page
+        When I type the right user and wrong   password 
