@@ -1,8 +1,7 @@
 import {Before, Given, When, And, Then} from "cypress-cucumber-preprocessor/steps"
 import Signup from "../pages/Signup"
 var registrationForm = '.shop-menu > .nav > :nth-child(4) > a'
-var signUpEmail = '[data-qa="signup-email"]'
-var signUpName = '[data-qa="signup-name"]'
+
 const url = Cypress.config("baseUrl")
 Given("I access google page", () => {
     cy.visit("https://www.google.com.br/");

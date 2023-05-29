@@ -19,5 +19,18 @@ export const ELEMENTS = {
     state: '[data-qa="state"]',
     city: '[data-qa="city"]',
     zipCode: '[data-qa="zipcode"]',
-    mobileNumber: '[data-qa="mobile_number"]'
+    mobileNumber: '[data-qa="mobile_number"]',
+    productImage: '.view-product',
+    productQuantity: '#quantity',
+    btnAddToCart: '[button="Add to cart"]', 
+    reviewerName: '/html/body/section/div/div/div[2]/div[3]/div[2]/div/div/form/span/input[1]',
+    reviewerEmail: '[email:"Email Address"]',
+    reviewForm: '#review',
+    btnSubmitReview: '.btn btn-default pull-right'
+
+
+
+
+
+    
 }
