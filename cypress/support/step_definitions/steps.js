@@ -28,6 +28,11 @@ Then("An error message should be displayed", () => {
     cy.get('.login-form > form > p').should('have.text', 'Your email or password is incorrect!')
 })
 
+// mapear right user and wrong password
+
+When("I type the right user and wrong password", () => {
+    cy.get
+})
 When("I access the pre-signup form", () => {
     Signup.accessPreSignUpForm()
 })

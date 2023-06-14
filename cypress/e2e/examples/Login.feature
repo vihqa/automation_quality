@@ -9,4 +9,5 @@ Feature: Login
 
     Scenario: Login with right user and wrong password
         Given I acess the home page
-        When I type the right user and wrong   password 
+        When I type the right user and wrong password 
+        Then An error message should be displayed

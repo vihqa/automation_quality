@@ -19,6 +19,11 @@ class Signup {
         cy.get(elSignUp.signUpName).type('Vitória')
         cy.get(elSignUp.signUpEmail).type('vihqa@gmail.com')
     }
+    // Fill the pre-signup input fileds with wrong data
+    fillingFormWithWrongData(){
+        cy.get()
+        cy.get()
+    }
     //Going to the signup page
     accessSignUpForm(){
         cy.get(elSignUp.signUpBtn).click()
@@ -37,11 +42,19 @@ class Signup {
         cy.get(elSignUp.company).type('Quality Digital')
         cy.get(elSignUp.address).type('Rua Aleatória Teste')
         cy.get(elSignUp.secondAddress).type('Endereço Secundário Teste')
+        if(Cypress.env('country')==="Canada"){
         cy.get(elSignUp.country).select('Canada')
         cy.get(elSignUp.state).type('Quebec')
         cy.get(elSignUp.city).type('Toronto')
-        cy.get(elSignUp.zipCode).type('08531300')
+        cy.get(elSignUp.zipCode).type('M4B1G5')}
+        else if(Cypress.env('country')==="Israel"){
+        cy.get(elSignUp.country).select('Israel')
+        cy.get(elSignUp.state).type('Galilee')
+        cy.get(elSignUp.city).type('Capernaum')
+        cy.get(elSignUp.zipCode).type('1231400')}
+    
         cy.get(elSignUp.mobileNumber).type('999999999')
+         
     }
 }
 export default new Signup()
